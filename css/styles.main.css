@@ -476,6 +476,16 @@ img {
     width: 85%;
     height: 170px;
     border-radius: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    cursor: pointer;
+}
+
+.items_interaccion:hover {
+    width: 90%;
+    height: 180px;
+    box-shadow: 0 8px 32px 0 rgb(255, 150, 0);
+    transition: 0.5s;
+
 }
 
 .items_interaccion_p {
@@ -578,4 +588,16 @@ img {
     margin-right: 45px;
     margin-left: 100px;
     margin-top: 6%;
+}
+
+@media (max-width: 1000px) {
+    .container_items {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
 }
